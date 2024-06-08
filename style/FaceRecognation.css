@@ -1,0 +1,144 @@
+:root {
+  --mainColor: #932180;
+  --secondaryColor: rgba(147, 33, 128, 0.5);
+  --helperColor: #430f85;
+  --circleColor: #99BAD4;
+  --white: #fff;
+  --black: #000;
+  --semiBlack: rgba(0, 25, 47, 1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+/* start global classes */
+.mainBtn,
+.secondaryBtn {
+  background-color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.5s ease-in-out;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.secondaryBtn {
+  background-color: var(--secondaryColor);
+  border: 1px solid var(--secondaryColor);
+}
+
+.mainBtn:hover,
+.secondaryBtn:hover {
+  cursor: pointer;
+  background-color: var(--white);
+  color: var(--mainColor);
+  border-color: var(--mainColor);
+}
+
+.secondaryBtn:hover {
+  color: var(--secondaryColor);
+  border-color: var(--secondaryColor);
+}
+
+.globalHeading h1 {
+  color: var(--helperColor);
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.globalHeading span {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--circleColor);
+}
+
+/* end global classes */
+/* start navbar */
+.navText {
+  color: var(--mainColor) !important;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: all 0.7s ease-in-out;
+  border-radius: 6px;
+}
+
+.navText:hover {
+  color: var(--white) !important;
+  background-color: var(--mainColor);
+}
+
+/* end navbar */
+
+/* start hero section */
+
+.heroFace {
+  margin-top: 7rem;
+}
+
+/* end hero section */
+
+/* start face section */
+
+.face-Recognation {
+  margin: 7rem 0 3rem 0;
+}
+
+.h-content {
+  color: var(--mainColor);
+  font-weight: 600;
+  font-size: 45px;
+  margin: 2rem 0 2rem 0;
+}
+
+.p-content {
+  color: var(--semiBlack);
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 9rem;
+  line-height: 40px;
+}
+
+
+/* end face section */
+
+
+
+
+/* start footer */
+.footer {
+  background-color: var(--mainColor);
+  padding: 3rem 0;
+}
+
+.footerText {
+  color: var(--white) !important;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: all 0.7s ease-in-out;
+}
+
+.footerCopy h4 {
+  color: var(--white);
+  font-size: 1.3rem;
+}
+
+.footerIcons a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.3rem;
+  margin: 0 18px;
+  transition: all 0.7s ease-in-out;
+}
+
+.footerIcons a:hover {
+  color: var(--circleColor);
+}
+
+/* end footer */
